@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101820;
+  color: #f2aa4c;
+  font-family: "Poppins", sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.timer-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background: #1e1e1e;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #f2aa4c;
+  color: #101820;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: #ffd580;
+  transform: scale(1.05);
+}
+
+.laps {
+  list-style: none;
+  margin-top: 25px;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.laps li {
+  padding: 6px 10px;
+  border-bottom: 1px solid #444;
+  font-size: 0.95rem;
+}
+
+/* Dark/Light Theme */
+.light-mode {
+  background-color: #fafafa;
+  color: #222;
+}
+
+.light-mode .timer-display {
+  background-color: #fff;
+  color: #111;
+}
+
+.light-mode button {
+  background: #111;
+  color: #fff;
+}
+
+.light-mode button:hover {
+  background: #333;
+}
